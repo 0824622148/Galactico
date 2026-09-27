@@ -111,7 +111,10 @@
     </div>
 
     <div class="form-panel">
-      <form data-enquiry id="form-view" novalidate="false">
+      <form data-enquiry id="form-view">
+        <input type="hidden" name="form" value="join">
+        <input type="hidden" name="started" value="">
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
         <h2 class="disp st76">Enquire now</h2>
         <div class="req">All fields required unless marked</div>
         <div class="form-grid">
@@ -123,11 +126,12 @@
           <label class="lbl"><span>Email</span><input class="inp" type="email" name="email" required></label>
         </div>
         <label class="lbl lbl-full"><span>Message (optional)</span><textarea class="inp" rows="4" name="message"></textarea></label>
+        <label class="consent"><input type="checkbox" name="consent" value="yes" required><span>I am this player's parent or legal guardian, and I consent to Galactico United FC processing the information in this form to respond to my enquiry, as set out in the <a href="privacy.html">privacy notice</a>.</span></label>
+        <div class="form-err" role="alert" hidden></div>
         <div class="form-actions">
           <button type="submit" class="btn btn-gold">Submit enquiry<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
           <a class="btn btn-line btn-wa" href="https://wa.me/27837352271" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.2 14c-.3.8-1.6 1.5-2.3 1.5-.6 0-1.9-.2-3.9-1.4a12 12 0 0 1-3.9-4.2c-.6-1.2-.5-2.3.1-3 .3-.4.6-.5.9-.5h.6c.2 0 .4.1.6.5l.8 1.8c.1.3 0 .5-.1.7l-.4.5c-.2.2-.2.4-.1.6.4.8 1.6 2.2 2.9 2.8.3.1.5.1.7-.1l.6-.7c.2-.2.4-.2.6-.1l1.7.8c.3.1.4.3.4.5 0 .3-.1.6-.2.8Z"></path></svg>WhatsApp us</a>
         </div>
-        <div class="form-note">Prototype form — submissions are not sent anywhere.</div>
       </form>
       <div class="sent" id="sent-view" hidden>
         <div class="tick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 12 5 5L20 6"></path></svg></div>
@@ -186,7 +190,7 @@
     <div class="foot-bar-in">
       <div>© 2026 Galactico United FC. All rights reserved.</div>
       <div class="foot-bar-links">
-        <a href="#">Privacy Policy</a><span class="sep">|</span><a href="#">Terms &amp; Conditions</a><span class="sep">|</span><div>Designed by <span class="gold">Vuka Online</span></div>
+        <a href="privacy.html">Privacy Policy</a><span class="sep">|</span><div>Designed by <span class="gold">Vuka Online</span></div>
       </div>
     </div>
   </div>

@@ -104,7 +104,7 @@
       $$('.htab[data-tab]').forEach((t) => t.classList.toggle('on', t.dataset.tab === tab));
       const rows = tab === 'fixtures'
         ? FIXTURES.slice(0, 4).map((f) => ({ dow: f.dow, date: f.date, age: f.age, vs: f.vs, venue: f.venue, score: f.time, gold: false, crest: f.crest }))
-        : RESULTS[1].rows.slice(0, 4).map((r) => ({ dow: 'SUN', date: '30 AUG', age: r.age,
+        : RESULTS.flatMap((g) => g.rows.map((r) => Object.assign({ gd: g.date.split(' ') }, r))).slice(0, 4).map((r) => ({ dow: r.gd[0], date: r.gd[1] + ' ' + r.gd[2], age: r.age,
             vs: isGal(r.home) ? 'vs ' + r.away : 'at ' + r.home,
             venue: 'SLFA Prem League', score: r.hs + ' — ' + r.as, gold: true,
             crest: (isGal(r.home) ? r.away : r.home).replace(/[^A-Z]/g, '').slice(0, 2) }));
@@ -242,18 +242,59 @@
     paint();
   };
 
+  // Enquiry forms post to api/enquiry (Vercel function). Set data-turnstile="<site key>" on the
+  // form to add a Cloudflare Turnstile check; the server enforces it once TURNSTILE_SECRET is set.
   const enquiryForm = function () {
     const form = $('form[data-enquiry]');
     if (!form) return;
     const formView = $('#form-view');
     const sentView = $('#sent-view');
-    form.addEventListener('submit', (e) => {
+    const submit = $('button[type=submit]', form);
+    const submitHtml = submit.innerHTML;
+    const errBox = $('.form-err', form);
+    const started = $('input[name=started]', form);
+    const stamp = () => { started.value = String(Date.now()); };
+    stamp();
+
+    if (form.dataset.turnstile) {
+      const slot = document.createElement('div');
+      slot.className = 'cf-turnstile';
+      slot.dataset.sitekey = form.dataset.turnstile;
+      slot.dataset.theme = 'dark';
+      errBox.before(slot);
+      const s = document.createElement('script');
+      s.src = 'https://challenges.cloudflare.com/turnstile/v0/api.js';
+      s.async = true;
+      document.head.appendChild(s);
+    }
+
+    const showError = (msg) => { errBox.textContent = msg; errBox.hidden = false; };
+    const busy = (on) => { submit.disabled = on; submit.innerHTML = on ? 'Sending…' : submitHtml; };
+
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
-      formView.hidden = true;
-      sentView.hidden = false;
+      errBox.hidden = true;
+      const body = {};
+      new FormData(form).forEach((v, k) => { body[k] = v; });
+      busy(true);
+      try {
+        const res = await fetch('api/enquiry', { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) });
+        const out = await res.json().catch(() => ({}));
+        if (!res.ok || !out.ok) {
+          const first = out.errors ? Object.values(out.errors)[0] : out.error;
+          throw new Error(first || 'Something went wrong.');
+        }
+        formView.hidden = true;
+        sentView.hidden = false;
+      } catch (err) {
+        showError(err.message + ' You can also reach the club on WhatsApp.');
+        if (window.turnstile) window.turnstile.reset();
+      } finally {
+        busy(false);
+      }
     });
     const reset = $('#reset-form');
-    if (reset) reset.addEventListener('click', () => { form.reset(); sentView.hidden = true; formView.hidden = false; });
+    if (reset) reset.addEventListener('click', () => { form.reset(); stamp(); sentView.hidden = true; formView.hidden = false; });
   };
   mods.join = enquiryForm;
   mods.contact = enquiryForm;

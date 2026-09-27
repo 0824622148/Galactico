@@ -1,0 +1,5 @@
+# Internal docs and dev files — not published to the live site.
+ops/
+README.md
+.nojekyll
+.gitignore

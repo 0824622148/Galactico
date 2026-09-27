@@ -100,6 +100,9 @@
     </div>
     <div class="form-panel">
       <form data-enquiry id="form-view">
+        <input type="hidden" name="form" value="contact">
+        <input type="hidden" name="started" value="">
+        <label class="hp" aria-hidden="true">Website<input name="website" tabindex="-1" autocomplete="off"></label>
         <h2 class="disp st76 send">Send a message</h2>
         <div class="form-grid">
           <label class="lbl"><span>Your name</span><input class="inp" name="name" required></label>
@@ -108,8 +111,9 @@
           <label class="lbl"><span>Subject</span><select class="inp" name="subject"><option>Player assessments</option><option>Teams &amp; training</option><option>Partnerships</option><option>General enquiry</option></select></label>
         </div>
         <label class="lbl lbl-full"><span>Message</span><textarea class="inp" rows="5" name="message" required></textarea></label>
+        <div class="form-err" role="alert" hidden></div>
         <button type="submit" class="btn btn-inline btn-gold btn-send">Send message<svg class="arrow" width="16" height="16" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" fill="none"><path d="M5 12h14M13 6l6 6-6 6"></path></svg></button>
-        <div class="form-note">Prototype form — messages are not sent anywhere.</div>
+        <div class="form-note">Your details are used only to reply to your message. See our <a href="privacy.html">privacy notice</a>.</div>
       </form>
       <div class="sent" id="sent-view" hidden>
         <div class="tick"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"><path d="m4 12 5 5L20 6"></path></svg></div>
@@ -168,7 +172,7 @@
     <div class="foot-bar-in">
       <div>© 2026 Galactico United FC. All rights reserved.</div>
       <div class="foot-bar-links">
-        <a href="#">Privacy Policy</a><span class="sep">|</span><a href="#">Terms &amp; Conditions</a><span class="sep">|</span><div>Designed by <span class="gold">Vuka Online</span></div>
+        <a href="privacy.html">Privacy Policy</a><span class="sep">|</span><div>Designed by <span class="gold">Vuka Online</span></div>
       </div>
     </div>
   </div>
