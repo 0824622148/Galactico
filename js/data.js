@@ -15,19 +15,19 @@ const ICON = {
 
 const NEWS = [
   { id: 'champs', cat: 'MATCH REPORTS', date: '30 AUG 2026', title: 'U8s Crowned SLFA Prem League Champions!',
-    img: 'assets/team-group.jpg', pos: '50% 35%',
+    img: 'assets/squad-u8.jpg', pos: '50% 40%',
     excerpt: 'Our U8s have completed an unbeaten season, winning the SLFA Premier League title.',
     body: ['Our U8s have officially finished the league season as unbeaten Champions, going the entire campaign with just one solitary draw.',
       'The title was sealed with a 3–2 win over Rietvlei FC A — a result that capped a season built on patient coaching, weekly development work and a squad that kept turning up for each other.',
       'An incredible achievement from our young stars, and a milestone for a club in its first generation.'] },
   { id: 'roundup', cat: 'MATCH REPORTS', date: '29 AUG 2026', title: 'Matchday Results Round Up',
-    img: 'assets/action-dribble.jpg', pos: '50% 25%',
+    img: 'assets/u9-mavericks-duel.jpg', pos: '50% 35%',
     excerpt: 'A full weekend of SLFA Premier League football across the age groups, with wins for the U10s, U11s, U12s, U13s, U14s and U15s.',
     body: ['Another action-packed weekend brought goals, comebacks, important wins and valuable lessons for our club.',
       'Highlights included a 14–0 win for the U9 Mavericks away at Linhill Celtic A, a 7–0 U11 result against Robertsham Callies FC A, and 3–1 wins on the road for both the U12s and U14s at Mondeor Meteors FC A.',
       'To our players, coaches, parents and supporters: thank you for continuing to stand together and represent Galactico United with pride.'] },
   { id: 'beyond', cat: 'DEVELOPMENT', date: '25 AUG 2026', title: 'Player Development Beyond the Game',
-    img: 'assets/action-juggle.jpg', pos: '50% 20%',
+    img: 'assets/u6-7-coach.jpg', pos: '50% 30%',
     excerpt: 'At Galactico, we focus on more than just football. We develop character, discipline and life skills.',
     body: ['Through our partnership with GSSI Ormonde we offer all-year-round training and development, which means players are assessed and coached outside of the season as well as inside it.',
       'Professional coaching and philosophy-driven development sit alongside a commitment to excellence and holistic long-term player development.',
@@ -39,7 +39,7 @@ const NEWS = [
       'Assessments are open to players born between 2013 and 2020 and take place at GSSI Ormonde.',
       'Secure your spot and be part of the first generation of Galacticos in South Africa.'] },
   { id: 'family', cat: 'COMMUNITY', date: '17 AUG 2026', title: 'One Club. One Family. One Galactico.',
-    img: 'assets/team-group.jpg', pos: '50% 50%',
+    img: 'assets/squad-u6-7.jpg', pos: '50% 45%',
     excerpt: 'A weekend for the club: moments of celebration, lessons to learn and memories to build.',
     body: ['Our teams continued to battle, compete and represent the badge with pride across the SLFA Premier League.',
       'What a weekend for the club — moments of celebration, lessons to learn and memories to build.',
@@ -53,34 +53,42 @@ const NEWS = [
 ];
 
 const TEAMS = [
-  { age: 'U6', phase: 'Foundation Phase', img: 'assets/team-group.jpg', pos: '30% 45%', note: 'First contact with organised football: ball mastery, coordination and confidence through play.' },
-  { age: 'U7', phase: 'Foundation Phase', img: 'assets/team-group.jpg', pos: '55% 45%', note: 'Trailblazers and Mavericks squads competing in SLFA U6 & U7 football.' },
-  { age: 'U8', phase: 'Development Phase', img: 'assets/action-dribble.jpg', pos: '50% 25%', note: 'SLFA Premier League Champions 2026 — an unbeaten league campaign with a single draw.' },
-  { age: 'U9', phase: 'Development Phase', img: 'assets/action-run.jpg', pos: '55% 35%', note: 'Mavericks and Trailblazers squads, building technique under pressure.' },
-  { age: 'U10', phase: 'Competitive Development', img: 'assets/action-juggle.jpg', pos: '50% 25%', note: 'Position awareness, first-touch quality and decision speed in competitive fixtures.' },
-  { age: 'U11', phase: 'Competitive Development', img: 'assets/action-goal.jpg', pos: '50% 30%', note: 'A high-scoring league season including 13–0 and 7–0 league results.' },
-  { age: 'U12', phase: 'Competitive Development', img: 'assets/action-dribble.jpg', pos: '40% 30%', note: 'Tactical structure, game understanding and consistency week to week.' },
-  { age: 'U13', phase: 'Elite Pathway', img: 'assets/action-run.jpg', pos: '40% 35%', note: 'Entry into the elite pathway: physical development alongside technical detail.' },
+  { age: 'U6', phase: 'Foundation Phase', img: 'assets/squad-u6.jpg', pos: '50% 45%', note: 'First contact with organised football: ball mastery, coordination and confidence through play.' },
+  { age: 'U7', phase: 'Foundation Phase', img: 'assets/squad-u7.jpg', pos: '50% 45%', note: 'Trailblazers and Mavericks squads competing in SLFA U6 & U7 football.' },
+  { age: 'U8', phase: 'Development Phase', img: 'assets/squad-u8.jpg', pos: '50% 45%', note: 'SLFA Premier League Champions 2026 — an unbeaten league campaign with a single draw.' },
+  { age: 'U9', phase: 'Development Phase', img: 'assets/squad-u9.jpg', pos: '50% 45%', note: 'Mavericks and Trailblazers squads, building technique under pressure.' },
+  { age: 'U10', phase: 'Competitive Development', img: 'assets/u10-duel.jpg', pos: '50% 50%', note: 'Position awareness, first-touch quality and decision speed in competitive fixtures.' },
+  { age: 'U11', phase: 'Competitive Development', img: 'assets/u11-duel.jpg', pos: '50% 45%', note: 'A high-scoring league season including 13–0 and 7–0 league results.' },
+  { age: 'U12', phase: 'Competitive Development', img: 'assets/squad-u12.jpg', pos: '50% 40%', note: 'Tactical structure, game understanding and consistency week to week.' },
+  { age: 'U13', phase: 'Elite Pathway', img: 'assets/u13-lineup.jpg', pos: '50% 45%', note: 'Entry into the elite pathway: physical development alongside technical detail.' },
   { age: 'U14', phase: 'Elite Pathway', img: 'assets/action-goal.jpg', pos: '60% 30%', note: 'Competing in the SLFA Premier League with a focus on match intelligence.' },
   { age: 'U15', phase: 'Elite Pathway', img: 'assets/action-juggle.jpg', pos: '55% 30%', note: 'The final youth stage: preparing players for senior and representative football.' }
 ];
 
 const PHASES = [
-  { label: 'U6 – U7', phase: 'Foundation Phase', img: TEAMS[0].img, pos: '40% 45%', team: 'U6' },
-  { label: 'U8 – U9', phase: 'Development Phase', img: TEAMS[2].img, pos: '50% 25%', team: 'U8' },
-  { label: 'U10 – U12', phase: 'Competitive Phase', img: TEAMS[4].img, pos: '50% 25%', team: 'U10' },
-  { label: 'U13 – U15', phase: 'Elite Pathway', img: TEAMS[8].img, pos: '55% 30%', team: 'U13' }
+  { label: 'U6 – U7', phase: 'Foundation Phase', img: 'assets/u6-7-dribble.jpg', pos: '50% 40%', team: 'U6' },
+  { label: 'U8 – U9', phase: 'Development Phase', img: 'assets/u9-mavericks-duel.jpg', pos: '50% 40%', team: 'U8' },
+  { label: 'U10 – U12', phase: 'Competitive Phase', img: 'assets/u11-duel.jpg', pos: '50% 40%', team: 'U10' },
+  { label: 'U13 – U15', phase: 'Elite Pathway', img: 'assets/u13-dribble.jpg', pos: '50% 45%', team: 'U13' }
 ];
 
 const GALLERY = [
-  { img: 'assets/action-run.jpg', pos: '55% 40%', caption: 'Matchday — driving into space', cat: 'MATCHDAY' },
-  { img: 'assets/team-group.jpg', pos: '50% 40%', caption: 'Squad photo before kick-off', cat: 'TEAMS' },
-  { img: 'assets/action-juggle.jpg', pos: '50% 25%', caption: 'Ball mastery in warm-up', cat: 'TRAINING' },
-  { img: 'assets/action-goal.jpg', pos: '50% 30%', caption: 'One-on-one at the back post', cat: 'MATCHDAY' },
-  { img: 'assets/action-dribble.jpg', pos: '50% 25%', caption: 'Shielding possession', cat: 'MATCHDAY' },
+  { img: 'assets/u13-dribble.jpg', pos: '50% 45%', caption: 'U13 — driving through midfield', cat: 'MATCHDAY' },
+  { img: 'assets/squad-u8.jpg', pos: '50% 45%', caption: 'U8 squad — SLFA Premier League Champions', cat: 'TEAMS' },
+  { img: 'assets/u9-mavericks-volley.jpg', pos: '50% 40%', caption: 'U9 Mavericks — controlling the high ball', cat: 'MATCHDAY' },
+  { img: 'assets/u11-team-talk.jpg', pos: '60% 45%', caption: 'U11 team talk on the sideline', cat: 'TRAINING' },
+  { img: 'assets/u10-duel.jpg', pos: '50% 50%', caption: 'U10 — one-on-one on the ball', cat: 'MATCHDAY' },
+  { img: 'assets/squad-u12.jpg', pos: '50% 40%', caption: 'U12 squad', cat: 'TEAMS' },
+  { img: 'assets/u6-7-keeper.jpg', pos: '50% 45%', caption: 'U6 & U7 — safe hands in goal', cat: 'MATCHDAY' },
+  { img: 'assets/u11-strike.jpg', pos: '50% 45%', caption: 'U11 — striking the ball', cat: 'MATCHDAY' },
+  { img: 'assets/u9-huddle.jpg', pos: '50% 40%', caption: 'U9 huddle before kick-off', cat: 'TEAMS' },
+  { img: 'assets/u6-7-laces.jpg', pos: '50% 50%', caption: 'Coaches on hand for our youngest players', cat: 'COMMUNITY' },
+  { img: 'assets/u12-strike.jpg', pos: '50% 45%', caption: 'U12 — winning the ball', cat: 'MATCHDAY' },
+  { img: 'assets/u9-trailblazers.jpg', pos: '50% 45%', caption: 'U9 Trailblazers on the attack', cat: 'MATCHDAY' },
+  { img: 'assets/u8-dribble.jpg', pos: '50% 45%', caption: 'U8 — running with the ball', cat: 'MATCHDAY' },
+  { img: 'assets/u6-7-dribble.jpg', pos: '50% 45%', caption: 'U6 & U7 — first touches', cat: 'TRAINING' },
   { img: 'assets/results-poster.jpg', pos: '50% 15%', caption: 'SLFA Premier League matchday results', cat: 'COMMUNITY' },
-  { img: 'assets/assessments-flyer.jpg', pos: '50% 20%', caption: 'Assessments with GSSI Ormonde', cat: 'COMMUNITY' },
-  { img: 'assets/team-group.jpg', pos: '20% 45%', caption: 'Coaches and players, Johannesburg South', cat: 'TEAMS' }
+  { img: 'assets/assessments-flyer.jpg', pos: '50% 20%', caption: 'Assessments with GSSI Ormonde', cat: 'COMMUNITY' }
 ];
 
 const RESULTS = [
@@ -117,12 +125,12 @@ const RESULTS = [
 ];
 
 const FIXTURES = [
-  { dow: 'SAT', date: '05 SEP', age: 'U10', vs: 'vs Linhill Celtic', venue: 'Venue TBC', time: '10:00', crest: 'LC' },
-  { dow: 'SAT', date: '05 SEP', age: 'U12', vs: 'vs Mondeor Meteors', venue: 'Venue TBC', time: '11:30', crest: 'MM' },
-  { dow: 'SUN', date: '06 SEP', age: 'U14', vs: 'vs Alveda FC', venue: 'Venue TBC', time: '09:00', crest: 'AF' },
-  { dow: 'SUN', date: '06 SEP', age: 'U15', vs: 'vs Hola Skoko Sporting', venue: 'Venue TBC', time: '13:30', crest: 'HS' },
-  { dow: 'SAT', date: '12 SEP', age: 'U8', vs: 'vs Rietvlei FC A', venue: 'Venue TBC', time: '10:00', crest: 'RV' },
-  { dow: 'SAT', date: '12 SEP', age: 'U11', vs: 'vs Robertsham Callies FC A', venue: 'Venue TBC', time: '12:00', crest: 'RC' }
+  { dow: 'SAT', date: '10 OCT', age: 'U9 MAVERICKS', vs: 'vs Hola Skoko Sporting', venue: 'Away', time: '10:00', crest: 'HS' },
+  { dow: 'SAT', date: '10 OCT', age: 'U9 TRAILBLAZERS', vs: 'vs Rietvlei FC A', venue: 'Away', time: '10:00', crest: 'RV' },
+  { dow: 'SAT', date: '10 OCT', age: 'U15', vs: 'vs Classico FC', venue: 'Away', time: '13:30', crest: 'CF' },
+  { dow: 'SUN', date: '11 OCT', age: 'U12', vs: 'vs Titus FC', venue: 'Away', time: '09:00', crest: 'TF' },
+  { dow: 'SUN', date: '11 OCT', age: 'U13', vs: 'vs Robertsham Callies FC A', venue: 'Home', time: '10:30', crest: 'RC' },
+  { dow: 'SUN', date: '11 OCT', age: 'U15', vs: 'vs Linhill Celtic FC A', venue: 'Away', time: '13:30', crest: 'LC' }
 ];
 
 const NEWS_CATS = ['ALL', 'MATCH REPORTS', 'CLUB NEWS', 'DEVELOPMENT', 'COMMUNITY'];

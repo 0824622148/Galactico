@@ -116,7 +116,7 @@
           '<div class="r"><div class="v">' + esc(m.venue) + '</div><div class="sc' + (m.gold ? ' g' : '') + '">' + esc(m.score) + '</div></div>' +
         '</div>').join('');
       note.textContent = tab === 'fixtures'
-        ? 'Placeholder fixture list — awaiting confirmed SLFA schedule and venues.'
+        ? 'SLFA Premier League matchday fixtures, 10 – 11 October 2026.'
         : 'SLFA Premier League — results as published by the club.';
     };
     $$('.htab[data-tab]').forEach((t) => t.addEventListener('click', () => { tab = t.dataset.tab; paintTab(); }));
