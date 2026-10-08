@@ -16,6 +16,8 @@ Replace the list with the coming week's fixtures. The first 4 also appear on the
 ```
 - `vs`: use `vs Team` for home games and `at Team` for away games
 - `crest`: 2-letter initials of the opponent (shown in the badge)
+- `venue`: the ground if the club gives one, otherwise `Home` / `Away` (the home side is on the left of the SLFA poster)
+- Shortcut: run `/update-fixtures` in Claude Code. It reads the newest poster in `../Galactico United Football Club Official Website/Upcoming Fixtures/`, updates the data, publishes and checks the live site
 
 ## 2. Results: `RESULTS`
 Add the new round at the **top** of the array, one group per match day, newest first. The home page shows the first 4 rows across the top groups, with their dates.

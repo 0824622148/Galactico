@@ -125,12 +125,12 @@ const RESULTS = [
 ];
 
 const FIXTURES = [
-  { dow: 'SAT', date: '10 OCT', age: 'U9 MAVERICKS', vs: 'vs Hola Skoko Sporting', venue: 'Away', time: '10:00', crest: 'HS' },
-  { dow: 'SAT', date: '10 OCT', age: 'U9 TRAILBLAZERS', vs: 'vs Rietvlei FC A', venue: 'Away', time: '10:00', crest: 'RV' },
-  { dow: 'SAT', date: '10 OCT', age: 'U15', vs: 'vs Classico FC', venue: 'Away', time: '13:30', crest: 'CF' },
-  { dow: 'SUN', date: '11 OCT', age: 'U12', vs: 'vs Titus FC', venue: 'Away', time: '09:00', crest: 'TF' },
+  { dow: 'SAT', date: '10 OCT', age: 'U9 MAVERICKS', vs: 'at Hola Skoko Sporting', venue: 'Away', time: '10:00', crest: 'HS' },
+  { dow: 'SAT', date: '10 OCT', age: 'U9 TRAILBLAZERS', vs: 'at Rietvlei FC A', venue: 'Away', time: '10:00', crest: 'RV' },
+  { dow: 'SAT', date: '10 OCT', age: 'U15', vs: 'at Classico FC', venue: 'Away', time: '13:30', crest: 'CF' },
+  { dow: 'SUN', date: '11 OCT', age: 'U12', vs: 'at Titus FC', venue: 'Away', time: '09:00', crest: 'TF' },
   { dow: 'SUN', date: '11 OCT', age: 'U13', vs: 'vs Robertsham Callies FC A', venue: 'Home', time: '10:30', crest: 'RC' },
-  { dow: 'SUN', date: '11 OCT', age: 'U15', vs: 'vs Linhill Celtic FC A', venue: 'Away', time: '13:30', crest: 'LC' }
+  { dow: 'SUN', date: '11 OCT', age: 'U15', vs: 'at Linhill Celtic FC A', venue: 'Away', time: '13:30', crest: 'LC' }
 ];
 
 const NEWS_CATS = ['ALL', 'MATCH REPORTS', 'CLUB NEWS', 'DEVELOPMENT', 'COMMUNITY'];

@@ -3,3 +3,4 @@ ops/
 README.md
 .nojekyll
 .gitignore
+.claude/
