@@ -12,6 +12,7 @@ Stack (§3): static HTML/CSS/JS · Vercel (hosting + `api/enquiry.js`) · Resend
 - **2026-10-05** — Proposal accepted. Waiting on the signed agreement. A WhatsApp group was set up for all website communication. Domain/access meeting with Moe Tmr at 11:00.
 - **2026-10-06** — Domain confirmed: `galacticounitedfc.co.za` (matches the site; the agreement wording says `galacticounited.co.za`). Registrar HostAfrica, account holder Mohamed Gaus (Moe). Vuka has access to Domains/DNS. The domain has a HostAfrica hosting package; check for existing email before any DNS change. Sitemap and robots updated.
 - **2026-10-06** — DNS checked. Name servers: HostAfrica (dan1/dan2.host-ww.net). All A records (`@`, `www`, `mail`, `ftp`, `pop`, `smtp`) point to 102.209.117.236 (HostAfrica cPanel). MX = `mail.galacticounitedfc.co.za`. SPF: `v=spf1 +a +mx +include:spf.host-ww.net +include:spf.antispamcloud.com ip4:102.209.117.236 ~all`. No DKIM, no DMARC. The website is the HostAfrica "coming soon" placeholder, so there is no live site to protect. Still to confirm whether any cPanel mailboxes are in use.
+- **2026-10-08** — Agreement signed (10-06). Vercel project `galactico-united-fc` created and linked to `0824622148/Galactico`; first deploy live at https://galactico-united-fc.vercel.app (pages, 404, sitemap, robots and `/api/enquiry` checked; `ops/` not published). `privacy.html` filled in: reg 2025/767665/07, Information Officer Mohamed Gaus (Chairman), info@ (club to confirm). DNS still unchanged at HostAfrica. Club photos are in a Google Drive folder, still to download. Target launch Mon 2026-10-12; name-server switch planned for Fri 10-09.
 
 ## Before Day 1 — ready now
 - [x] Form backend (`api/enquiry.js`), POPIA consent checkbox, privacy notice, sitemap, robots, 404, `vercel.json` — on branch `launch-prep`
@@ -22,7 +23,7 @@ Stack (§3): static HTML/CSS/JS · Vercel (hosting + `api/enquiry.js`) · Resend
 - [ ] Receive the club's content. Log what arrived and what's still outstanding in `CONTENT-REQUEST.md`
 - [ ] **Confirm the domain** (the agreement says `galacticounited.co.za`, the site uses `galacticounitedfc.co.za`) and the registrar
 - [ ] Ask for registrar admin access, or agree the club will action DNS changes within 2 business days (§7)
-- [ ] Create the Vercel project from the repo (Vercel dashboard → Add New → Project → import `0824622148/Galactico`)
+- [x] Create the Vercel project from the repo (`galactico-united-fc`, 2026-10-08) (Vercel dashboard → Add New → Project → import `0824622148/Galactico`)
   - Framework preset: **Other**. Build command: none. Output directory: `.` (root)
   - Production branch: `main`. `launch-prep` gets a preview URL automatically
 - [ ] Merge `launch-prep` → `main` only once the preview is checked (this also updates the Pages prototype)
@@ -31,7 +32,7 @@ Stack (§3): static HTML/CSS/JS · Vercel (hosting + `api/enquiry.js`) · Resend
 - [ ] Load the club's content into `js/data.js` and the pages listed in `CONTENT-REQUEST.md`
 - [ ] Replace `DOMAIN` in `sitemap.xml` and `robots.txt` with the confirmed domain
 - [ ] Update `info@galacticounitedfc.co.za` in all pages if the domain changes (`grep -l galacticounitedfc *.html`). Header and footer are inlined in every page
-- [ ] Fill in the `[...]` placeholders in `privacy.html` (NPO no., Information Officer, contact, launch date)
+- [x] Fill in the `[...]` placeholders in `privacy.html` (NPO no., Information Officer, contact, launch date)
 - [ ] Search placeholder: follow the club's decision (remove it from the nav on all pages, or quote it)
 - [ ] Final design pass and mobile check at 375px
 
