@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!-- Replace DOMAIN with the club's confirmed domain before launch (see ops/LAUNCH-RUNBOOK.md). -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://DOMAIN/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://DOMAIN/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/teams.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/development.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/fixtures.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/news.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/gallery.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/join.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
-  <url><loc>https://DOMAIN/privacy.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/about.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/teams.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/development.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/fixtures.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/news.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/gallery.html</loc><changefreq>weekly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/join.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/contact.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
+  <url><loc>https://galacticounitedfc.co.za/privacy.html</loc><changefreq>monthly</changefreq><priority>0.7</priority></url>
 </urlset>

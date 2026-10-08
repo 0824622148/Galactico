@@ -8,6 +8,11 @@ Stack (§3): static HTML/CSS/JS · Vercel (hosting + `api/enquiry.js`) · Resend
 
 ---
 
+## Status log
+- **2026-10-05** — Proposal accepted. Waiting on the signed agreement. A WhatsApp group was set up for all website communication. Domain/access meeting with Moe Tmr at 11:00.
+- **2026-10-06** — Domain confirmed: `galacticounitedfc.co.za` (matches the site; the agreement wording says `galacticounited.co.za`). Registrar HostAfrica, account holder Mohamed Gaus (Moe). Vuka has access to Domains/DNS. The domain has a HostAfrica hosting package; check for existing email before any DNS change. Sitemap and robots updated.
+- **2026-10-06** — DNS checked. Name servers: HostAfrica (dan1/dan2.host-ww.net). All A records (`@`, `www`, `mail`, `ftp`, `pop`, `smtp`) point to 102.209.117.236 (HostAfrica cPanel). MX = `mail.galacticounitedfc.co.za`. SPF: `v=spf1 +a +mx +include:spf.host-ww.net +include:spf.antispamcloud.com ip4:102.209.117.236 ~all`. No DKIM, no DMARC. The website is the HostAfrica "coming soon" placeholder, so there is no live site to protect. Still to confirm whether any cPanel mailboxes are in use.
+
 ## Before Day 1 — ready now
 - [x] Form backend (`api/enquiry.js`), POPIA consent checkbox, privacy notice, sitemap, robots, 404, `vercel.json` — on branch `launch-prep`
 - [ ] Send the club the content request (`CONTENT-REQUEST.md`)
